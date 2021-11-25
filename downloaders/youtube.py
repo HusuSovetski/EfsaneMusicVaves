@@ -19,7 +19,7 @@ def download(url: str) -> str:
     duration = round(info["duration"] / 60)
     if duration > DURATION_LIMIT:
         raise DurationLimitError(
-            f"🛑 Daha uzun videolar 60 dakikalar izin verilmezse, sağlanan video 60 dakikayı aşmamalı"
+            f"🛑 Daha uzun videolar 60 deqiqede icaze verilmese,video 60 deqiqeni keçmemelidir."
         )
     ydl.download([url])
     return path.join("downloads", f"{info['id']}.{info['ext']}")
