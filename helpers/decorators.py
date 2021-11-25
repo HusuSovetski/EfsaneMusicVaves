@@ -43,7 +43,7 @@ def sudo_users_only(func: Callable) -> Callable:
 
 # Utils Helper
 def humanbytes(size):
-    """baytları Baytlara Dönüştür ki İnsan Okuyabilsin"""
+    """baytları Baytlara çevirki ki İnsan Oxuyabilsin"""
     if not size:
         return ""
     power = 2 ** 10
